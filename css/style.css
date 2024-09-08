@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5372F0;
+    padding: 10px; /* Add some padding for smaller screens */
+}
+
+.container {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 7px;
+    background: #fff;
+    max-width: 90vw;
+    min-width: 300px; /* Ensure a minimum width for readability */
+    width: auto; /* Allow the container to grow based on content */
+}
+
+.container h2 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+    text-align: center; /* Center title text */
+}
+
+.container .content {
+    margin: 25px 20px 35px;
+}
+
+.content .word {
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 20px;
+    margin-right: -20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow-x: auto; /* Allow horizontal scrolling if word is too long */
+}
+
+.content .details {
+    margin: 25px 0 20px;
+}
+
+.details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.details p b {
+    font-weight: 500;
+}
+
+.content input {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    font-size: 16px;
+    padding: 0 16px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.content .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.buttons button {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    width: calc(50% - 5px); /* Adjust button width */
+}
+
+.buttons .refresh-word {
+    background: #6c757d;
+}
+
+.buttons .check-word {
+    background: #5372F0;
+}
+
+/* Responsive adjustments for small devices */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Make the container take full width on small devices */
+        min-width: unset; /* Remove the minimum width */
+    }
+
+    .content .word {
+        font-size: 24px; /* Reduce word font size */
+        letter-spacing: 10px; /* Adjust letter spacing */
+        margin-right: -10px;
+    }
+
+    .content input {
+        height: 45px;
+        font-size: 14px; /* Adjust font size for input */
+    }
+
+    .buttons button {
+        padding: 12px 0;
+        font-size: 14px; /* Reduce button font size */
+    }
+
+    .details p {
+        font-size: 16px; /* Adjust details font size */
+    }
+}
