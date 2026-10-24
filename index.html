@@ -2,27 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>word Scramble</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="word.js" defer></script>
-    <script src="index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Game Shelf is a small browser arcade with word scramble, tic-tac-toe, memory match, snake, hangman, and 2048.">
+    <meta name="theme-color" content="#14120f">
+    <title>Game Shelf</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/games.css">
+    <script type="module" src="js/app.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h2>Word Scramble</h2>
-        <div class="content">
-            <p class="word">enapnios</p>
-            <div class="details">
-                <p class="hint">Hint: <span>The process of increase or grow</span></p>
-                <p class="time">Time Left: <span><b>30</b>s</span></p>
-            </div>
-            <input type="text" placeholder="Enter a valid word">
-            <div class="buttons">
-                <button class="refresh-word">Refresh word</button>
-                <button class="check-word">check word</button>
-            </div>
-        </div>
-    </div>
+    <div id="app"></div>
 </body>
 </html>
