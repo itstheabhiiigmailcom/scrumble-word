@@ -1,4 +1,4 @@
-const words = [
+export const words = [
     { word: "algorithm", hint: "A step-by-step procedure for solving a problem" },
     { word: "binary", hint: "A numbering system using only 0 and 1" },
     { word: "variable", hint: "A storage location in programming that holds data" },
